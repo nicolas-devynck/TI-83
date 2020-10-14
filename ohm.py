@@ -25,7 +25,7 @@ def watt_ri():
     return r*i**2
 # fonction volt
 def volt_pr():
-    print("U=√P*R")
+    print("U=sqrt(P*R)")
     print("----------")
     disp_clr()
     p = int(input("P ? "))
@@ -84,7 +84,7 @@ def amper_ur():
     return u/r
 def amper_pr():
     disp_clr()
-    print("I=√P/R")
+    print("I=sqrt(P/R)")
     print("----------")
     p = int(input("P ? "))
     r = int(input("R ? "))
@@ -94,9 +94,9 @@ def puri():
     #Liste des menus
     menu_0 = ["Exit","Watt = P","Volt = U","Ohm = R","Amper = I"]
     menu_watt = ["Exit","P=U²/R","P=U*I","P=R*I²"]
-    menu_volt = ["Exit","U=√P*R","U=P/I","U=R*I"]
+    menu_volt = ["Exit","U=sqrt(P*R)","U=P/I","U=R*I"]
     menu_ohm = ["Exit","R=U²/P","R=P/I²","R=U/I"]
-    menu_amper = ["Exit","I=P/U","I=U/R","I=√P/R"]
+    menu_amper = ["Exit","I=P/U","I=U/R","I=sqrt(P/R)"]
     disp_clr()
     print("Loi d'ohm")
     print("----------")
