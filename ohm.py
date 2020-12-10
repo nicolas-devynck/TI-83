@@ -25,9 +25,9 @@ def watt_ri():
     return r*i**2
 # fonction volt
 def volt_pr():
+    disp_clr()
     print("U=sqrt(P*R)")
     print("----------")
-    disp_clr()
     p = int(input("P ? "))
     r = int(input("R ? "))
     return sqrt(p*r)
