@@ -1,5 +1,5 @@
 import math
-def bin_dec(x):
+def bin_dec(x:str):
     resultat = int(0)
     k = int(1)
     for i in x:

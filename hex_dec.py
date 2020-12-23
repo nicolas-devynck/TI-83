@@ -1,5 +1,5 @@
 import math
-def hex_dec(x):
+def hex_dec(x:str):
     resultat = int(0)
     k = int(1)
     for i in x:

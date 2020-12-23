@@ -1,8 +1,8 @@
 import math
-def dec_bin(x):
+def dec_bin(x:str):
     resultat = ""
     tmp = str(int(math.fmod(int(x),2)))
-    y = int(x)/2
+    y = int(int(x)/2)
     while (y>0):
         tmp = tmp + str(int(math.fmod(y,2)))
         y = int(y/2)

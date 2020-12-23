@@ -1,7 +1,8 @@
 import math
 def dec_hex(x):
+    x = str(x)
     tmp = str(int(math.fmod(int(x),16)))
-    y = int(x)/16
+    y = int(int(x)/16)
     if tmp == "10":
         tmp = "A"
     elif tmp == "11":
@@ -15,21 +16,21 @@ def dec_hex(x):
     elif tmp == "15":
         tmp = "F"
     while (y>0):
-        if str(int(math.fmod(y,16))) == "10":
+        if str(int(math.fmod(int(y),16))) == "10":
             tmp = tmp + "A"
-        elif str(int(math.fmod(y,16))) == "11":
+        elif str(int(math.fmod(int(y),16))) == "11":
             tmp = tmp + "B"
-        elif str(int(math.fmod(y,16))) == "12":
+        elif str(int(math.fmod(int(y),16))) == "12":
             tmp = tmp + "C"
-        elif str(int(math.fmod(y,16))) == "13":
+        elif str(int(math.fmod(int(y),16))) == "13":
             tmp = tmp + "D"
-        elif str(int(math.fmod(y,16))) == "14":
+        elif str(int(math.fmod(int(y),16))) == "14":
             tmp = tmp + "E"
-        elif str(int(math.fmod(y,16))) == "15":
+        elif str(int(math.fmod(int(y),16))) == "15":
             tmp = tmp + "F"
         else:
-            tmp = tmp + str(int(math.fmod(y,16)))
-        y = int(y/16)
+            tmp = tmp + str(int(math.fmod(int(y),16)))
+        y = int(int(y/16))
     resultat=""
     for i in tmp:
         resultat=i+resultat
