@@ -1,5 +1,5 @@
 import math
-def dec_hex(x):
+def dec_hex(x:str):
     x = str(x)
     tmp = str(int(math.fmod(int(x),16)))
     y = int(int(x)/16)
