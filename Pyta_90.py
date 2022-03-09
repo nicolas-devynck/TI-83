@@ -6,8 +6,8 @@ def function():
     print("----------")
     print("A**2+B**2=C**2")
     print("----------")
-    a=input("A ? ")
-    b=input("B ? ")
+    a=int(input("A ? "))
+    b=int(input("B ? "))
     resultat = str(math.sqrt(a**2+b**2))
     return resultat
 print("Hypotenuse = "+function())
