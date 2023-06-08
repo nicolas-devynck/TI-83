@@ -1,4 +1,6 @@
-import math
+from ti_system import *
+from math import *
+disp_clr()
 def bin_dec(x:str):
     resultat = int(0)
     k = int(1)
